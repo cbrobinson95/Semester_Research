@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D3 Practice</title>
+    <script type="text/javascript" src="d3.min.js"></script>
+</head>
+<body style="background-color: #777777">
+<h1>This is the header.</h1>
+
+<p>This is the first paragraph.</p>
+
+<p>This is the second paragraph.</p>
+
+<p>This is the third paragraph.</p>
+
+<h2></h2>
+<h2></h2>
+<h2></h2>
+
+<button onclick="mySelFunction()">Run Selection</button><br><br>
+<button onclick="myTransFunction()">Run Transition</button><br><br>
+<button onclick="myEntFunction()">Run Enter</button><br><br>
+<button onclick="myExFunction()">Run Exit</button>
+
+<script>
+    function mySelFunction() {
+        d3.selectAll("p")
+            .style("color", "white");
+        console.log("The color has been changed to white.");
+    }
+
+    function myTransFunction() {
+        d3.selectAll("p").transition()
+            .duration(750)
+            .style("color", "black");
+        console.log("The color has been transitioned to black.");
+    }
+
+    function myEntFunction() {
+        var h2 = d3.select("body").selectAll("h2")
+            .data(["This is a h2 header."])
+            .text(String);
+        h2.enter().append("h2")
+            .text(String);
+        console.log("The blank h2 elements were updated with data and appended to the parent node.");
+    }
+
+
+
+</script>
+
+</body>
+
+
+
+</html>
