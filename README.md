@@ -1,3 +1,5 @@
+### [D3.js Slides](https://docs.google.com/a/g.cofc.edu/presentation/d/1oyJQfZHJd35H49qB0O5HL9DbpE4yCwu4w0Vd7MV4QD8/edit?usp=sharing)
+
 # Semester_Research
 
 In our previous assignments, you have created JavaScript programs to solve problems using the programming lessons throughout the semester. For this next project, a group research and presentation assignment, you will be working with one other student to further investigate advanced topics in programming for the web and present your findings to the class in form of a slideshow presentation with code examples.
